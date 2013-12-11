@@ -1,0 +1,41 @@
+<div class="heading">
+
+<h1>Recipients</h1>
+
+<p><%= link_to 'Add a New Recipient', new_recipient_url %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>First-name</th>
+      <th>Last name</th>
+      <th>Birthday</th>
+      <th>Anniversary</th>
+      <th>Other holidays</th>
+      <th>Relationship</th>
+      <th>Children</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <% @recipients.each do |recipient| %>
+    <tr>
+      <td><%= recipient.first_name %></td>
+      <td><%= recipient.last_name %></td>
+      <td><%= recipient.birthday %></td>
+      <td><%= recipient.anniversary %></td>
+      <td><%= recipient.other_holidays %></td>
+      <td><%= recipient.relationship %></td>
+      <td><%= recipient.children %></td>
+      <td><%= link_to 'Show', recipient_url(recipient) %></td>
+      <td><%= link_to 'Edit', edit_recipient_url(recipient) %></td>
+      <td><%= link_to 'Destroy', recipient_url(recipient), method: 'delete', data: { confirm: "Do you really want to delete this recipient?" } %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+</div>

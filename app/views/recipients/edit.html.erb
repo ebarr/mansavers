@@ -1,0 +1,53 @@
+<div class="heading">
+<h1>Editing Recipient #<%= @recipient.id %></h1>
+
+<%= form_tag(recipient_url(@recipient), method: 'patch') do %>
+  <div>
+    <%= label_tag :first_name %><br />
+    <%= text_field_tag :first_name, @recipient.first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :last_name %><br />
+    <%= text_field_tag :last_name, @recipient.last_name %>
+  </div>
+
+  <div>
+    <%= label_tag :birthday %><br />
+    <%= text_field_tag :birthday, @recipient.birthday %>
+  </div>
+
+  <div>
+    <%= label_tag :anniversary %><br />
+    <%= text_field_tag :anniversary, @recipient.anniversary %>
+  </div>
+
+  <div>
+    <%= label_tag :other_holidays %><br />
+    <%= text_field_tag :other_holidays, @recipient.other_holidays %>
+  </div>
+
+  <div>
+    <%= label_tag :relationship %><br />
+    <%= text_field_tag :relationship, @recipient.relationship %>
+    <%= radio_button_tag(:relationship, "wife") %>
+    <%= label_tag(:relationship, "wife") %>
+    <%= radio_button_tag(:relationship, "girlfriend") %>
+    <%= label_tag(:relationship, "girlfriend") %>
+     <%= radio_button_tag(:relationship, "partner") %>
+    <%= label_tag(:relationship, "partner") %>
+     <%= radio_button_tag(:relationship, "mistress") %>
+    <%= label_tag(:relationship, "mistress") %>
+  </div>
+
+  <div>
+    <%= label_tag :children %><br />
+    <%= check_box_tag :children, 1, @recipient.children? %>
+  </div>
+
+  <div>
+    <%= submit_tag "Update Recipient" %>
+  </div>
+<% end %>
+
+</div>

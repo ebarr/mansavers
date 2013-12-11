@@ -1,0 +1,55 @@
+<div class="heading">
+
+<h1>New Recipient</h1>
+
+<%= form_tag(recipients_url, method: 'post') do %>
+  <div>
+    <%= label_tag :first_name %><br />
+    <%= text_field_tag :first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :last_name %><br />
+    <%= text_field_tag :last_name %>
+  </div>
+
+  <div>
+    <%= label_tag :birthday, "Birthday Date" %><br />
+    <%= text_field_tag :birthday %>
+  </div>
+
+  <div>
+    <%= label_tag :anniversary, "Anniversary Date" %><br />
+    <%= text_field_tag :anniversary %>
+  </div>
+
+  <div>
+    <%= label_tag :other_holidays, "Other holidays you celebrate:" %><br />
+    <%= select_tag :other_holidays, "<option value='Christmas'>Christmas</option><option value='Hanakkuh'>Hanakkuh</option><option value='Kwanzaa'>Kwanzaa</option>".html_safe %>
+  </div>
+
+  <div>
+    <%= label_tag :relationship, "This individual is your..." %><br />
+     <%= radio_button_tag(:relationship, "wife") %>
+    <%= label_tag(:relationship, "Wife") %><br />
+    <%= radio_button_tag(:relationship, "girlfriend") %>
+    <%= label_tag(:relationship, "Girlfriend") %><br />
+     <%= radio_button_tag(:relationship, "partner") %>
+    <%= label_tag(:relationship, "Partner") %><br />
+     <%= radio_button_tag(:relationship, "mistress") %>
+    <%= label_tag(:relationship, "Mistress") %><br />
+  </div>
+
+  <div>
+    <%= label_tag :children, "Do you have children?" %><br />
+    <%= radio_button_tag(:children, "Yes") %>
+    <%= label_tag(:children, "Yes") %><br />
+      <%= radio_button_tag(:children, "No") %>
+    <%= label_tag(:children, "No") %><br />
+  </div>
+
+  <div>
+    <%= submit_tag "Create Recipient" %>
+  </div>
+<% end %>
+</div>

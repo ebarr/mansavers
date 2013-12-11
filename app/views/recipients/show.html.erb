@@ -1,0 +1,30 @@
+<div class="heading">
+
+<h1>Recipient #<%= @recipient.id %></h1>
+
+<dl>
+  <dt>First name</dt>
+  <dd><%= @recipient.first_name %></dd>
+
+  <dt>Last name</dt>
+  <dd><%= @recipient.last_name %></dd>
+
+  <dt>Birthday</dt>
+  <dd><%= @recipient.birthday %></dd>
+
+  <dt>Anniversary</dt>
+  <dd><%= @recipient.anniversary %></dd>
+
+  <dt>Other holidays</dt>
+  <dd><%= @recipient.other_holidays %></dd>
+
+  <dt>Relationship</dt>
+  <dd><%= @recipient.relationship %></dd>
+
+  <dt>Children</dt>
+  <dd><%= @recipient.children? %></dd>
+
+</dl>
+<%= link_to "Start sending smiles", gifts_url %>
+
+</div>

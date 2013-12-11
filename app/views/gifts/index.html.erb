@@ -1,0 +1,158 @@
+<div class="heading">
+<h1>Gifts</h1>
+
+<%= form_tag(gifts_url, method: 'post', method: 'patch') do %>
+<div class="container">
+<div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>1. Select your gift</p>
+              </div></div>
+            </div></div>
+
+<div class="row">
+  <div class="col-lg-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Send a Small Gift</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>Heart Charm Bracelet</li>
+                  <li>$38</li>
+                </ul>
+                <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/16/_8580916.jpg" alt="bracelet" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+   <div class="col-lg-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Send a Medium Gift</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>Personalized Monogram Necklacke</li>
+                  <li>$98</li>
+                </ul>
+                <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/6/_8424846.jpg" alt="necklace" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+
+   <div class="col-lg-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Send a Large Gift</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>Michael Kor's Watch</li>
+                  <li>$225</li>
+                </ul>
+                <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/19/_8055859.jpg" alt="Michael Kor's Watch" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+  <div class="col-lg-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Get a Recommendation</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>$10 for help from a personal shopper to find you the perfect gift.</li>
+                </ul>
+                <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/19/_8055859.jpg" alt="Michael Kor's Watch" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+
+<div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>2. Select your options</p>
+              </div></div>
+            </div></div>
+
+<div class="row">
+  <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Small Flowers Option</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>$35 includes shipping</li>
+                  <li>Flowers sent from a local store.</li>
+                </ul>
+                <p><img src="http://ris.fashion.telegraph.co.uk/RichImageService.svc/imagecontent/1/TMG9103293/m/CLAIRES_2149195a.jpg" alt="cheap necklace" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+
+<div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Medium Flowers Option</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>$50 includes shipping</li>
+                  <li>Flowers sent from a local store.</li>
+                </ul>
+                <p><img src="http://ris.fashion.telegraph.co.uk/RichImageService.svc/imagecontent/1/TMG9103293/m/CLAIRES_2149195a.jpg" alt="cheap necklace" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+
+  <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Large Flowers Option</h3></div>
+                <div class="panel-body">
+                <ul>
+                  <li>$75 includes shipping</li>
+                  <li>Flowers sent from a local store.</li>
+                </ul>
+                <p><img src="http://ris.fashion.telegraph.co.uk/RichImageService.svc/imagecontent/1/TMG9103293/m/CLAIRES_2149195a.jpg" alt="cheap necklace" class="img-thumbnail"></p>
+
+                <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+              </div>
+            </div>
+  </div>
+
+  <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>3. Shipping</p>
+              </div>
+            </div>
+            </div>
+          </div>
+  <div class="row">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p>4. Billing</p>
+              </div>
+            </div>
+            </div>
+          </div>
+
+</div>
+
+
+<%= submit_tag "Create Gift" %>
+</div>
+</div>
+<% end %>

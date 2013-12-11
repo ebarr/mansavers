@@ -1,0 +1,199 @@
+<div class="heading">
+
+<h1>Get Started Today...</h1>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+
+<div class="container">
+  <div class="accordion">
+
+    <h3 id="accordionHeader1">1. Select your sorry gift</h3>
+    <div class="row-fluid">
+      <div class="col-lg-3">
+        <div class="panel panel-primary" id="jefftarget">
+          <div class="panel-heading">
+            <h4 class="panel-title">Send a Small Gift</h4>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Heart Charm Bracelet</li>
+              <li>$38</li>
+            </ul>
+            <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/16/_8580916.jpg" alt="bracelet" class="img-thumbnail"></p>
+
+            <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">Send a Medium Gift</h4>
+          </div>
+          <div class="panel-body">
+            <ul>
+              <li>Personalized Monogram Necklacke</li>
+              <li>$98</li>
+            </ul>
+               <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/6/_8424846.jpg" alt="necklace" class="img-thumbnail"></p>
+
+               <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+            </div>
+        </div>
+      </div>
+
+            <div class="col-lg-3">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">Send a Large Gift</h4>
+                  </div>
+                      <div class="panel-body">
+                        <ul>
+                          <li>Michael Kor's Watch</li>
+                          <li>$225</li>
+                        </ul>
+                            <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/19/_8055859.jpg" alt="Michael Kor's Watch" class="img-thumbnail"></p>
+
+                            <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3">
+               <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">Get a Recommendation</h4>
+                  </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li>$10 for help from a personal shopper to find you the perfect gift.</li>
+                      </ul>
+                          <p><img src="http://bit.ly/18rEvNF" alt="Thumbs Up" class="img-thumbnail"></p>
+
+                          <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+
+      <h3 id="accordionHeader2">2. Other add ons</h3>
+
+      <div class="row-fluid">
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">Send flowers</h4>
+              </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li>$35 includes shipping</li>
+                      <li>Flowers sent from a local store.</li>
+                    </ul>
+                        <p><img src="
+                          http://s3.amazonaws.com/Supermarket/pictures/530746/il_fullxfull.383823531_ncvf.jpg" alt="cheap flowers" class="img-thumbnail"></p>
+
+                        <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+                  </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h4 class="panel-title">Greeting card</h4>
+              </div>
+                  <div class="panel-body">
+                    <ul>
+                      <li>$5</li>
+                      <li>...</li>
+                    </ul>
+                        <p><img src="http://myfsn-ars.flowershopnetwork.com/images/flowerdatabase/RO00807lg.167.jpg" alt="medium flowers" class="img-thumbnail"></p>
+
+                        <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4 class="panel-title">Other Small Gift</h4>
+                </div>
+                    <div class="panel-body">
+                      <ul>
+                        <li>$15</li>
+                        <li>...</li>
+                      </ul>
+                          <p><img src="http://www.wtop.com/emedia/wtop/27/2770/277032.jpg" alt="nice flowers" class="img-thumbnail"></p>
+
+                          <p><%= link_to "SELECT", root_url, class: "btn btn-success", role: "button" %></p>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 id="accordionHeader3">3. Shipping</h3>
+          <div class="row-fluid">
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+
+                <div id="collapseThree" class="collapse in">
+                   <div class="panel-body">
+                        <p><%= f.label :recipient_first_name, "First Name" %><br />
+                      <%= f.text_field :recipient_first_name %></p>
+                        <p><%= f.label :recipient_last_name, "Last Name" %><br />
+                      <%= f.text_field :recipient_last_name %></p>
+                        <p><%= f.label :address %><br />
+                      <%= f.text_field :address %></p>
+                        <p><%= f.label :city %><br />
+                      <%= f.text_field :city %></p>
+                        <p><%= f.label :state %><br />
+                      <%= f.text_field :state %></p>
+                        <p><%= f.label :zip_code %><br />
+                      <%= f.text_field :zip_code %></p>
+
+                      <div><button type="button" class="btn btn-success" data-toggle="collapse" data-target="#collapseFour" id="jeff">
+                        Continue
+                      </button></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      <h3 id="accordionFour">4. Billing</h3>
+        <div class="row-fluid">
+          <div class="col-lg-12">
+            <div class="panel panel-default">
+
+                <div id="collapseFour" data-toggle="collapse" class="collapse in">
+                   <div class="panel-body">
+                <%= devise_error_messages! %>
+                        <p><%= f.label :username %><br />
+                        <%= f.text_field :username %></p>
+
+                        <p><%= f.label :email %><br />
+                        <%= f.email_field :email %></p>
+
+                        <p><%= f.label :password %><br />
+                        <%= f.password_field :password %></p>
+
+                        <p><%= f.label :password_confirmation %><br />
+                        <%= f.password_field :password_confirmation %></p>
+
+                          <div><%= f.submit "Sign up", class: "btn btn-success", role: "button" %></div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<% end %>
+</div>
+</div>
+
+
+

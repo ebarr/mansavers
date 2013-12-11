@@ -1,0 +1,7 @@
+<h1>Editing Gift #<%= @gift.id %></h1>
+
+<%= form_tag(gift_url(@gift), method: 'patch') do %>
+  <div>
+    <%= submit_tag "Update Gift" %>
+  </div>
+<% end %>

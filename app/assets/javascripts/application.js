@@ -14,10 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
+//= require_self
 //= require_tree .
 
 $(function() {
-  $("#jeff").on("click", function() {
-    $("#collapseFour").collapse('show')
-  })
-})
+  $( ".accordion" ).accordion( );
+
+   $("#select, #select2, #select3").on("click", function() {
+    $("#accordionTwo").click();
+
+
+  $("#continue").on("click", function() {
+    $("#accordionThree").click();
+
+  });
+  });
+});
+

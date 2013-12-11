@@ -34,15 +34,9 @@ ActiveRecord::Schema.define(version: 20131207160442) do
     t.string   "city"
     t.string   "state"
     t.string   "zip_code"
-    t.string   "small_gift_name"
-    t.string   "small_gift_price"
-    t.string   "small_gift_image"
-    t.string   "medium_gift_name"
-    t.string   "medium_gift_price"
-    t.string   "medium_gift_image"
-    t.string   "large_gift_name"
-    t.string   "large_gift_price"
-    t.string   "large_gift_image"
+    t.string   "gift_name"
+    t.integer  "gift_price"
+    t.string   "gift_image"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"

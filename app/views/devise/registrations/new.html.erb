@@ -1,6 +1,6 @@
 <div class="heading">
 
-<h1>Get Started Today...</h1>
+<h1>Say Sorry Today...</h1>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 
@@ -8,20 +8,18 @@
 <div class="container">
   <div class="accordion">
 
-    <h3 id="accordionHeader1">1. Select your sorry gift</h3>
+    <h3 id="accordionHeader1">1. Select Your Sorry Gift</h3>
     <div class="row-fluid">
       <div class="col-lg-4">
         <div class="panel panel-primary">
           <div class="panel-heading">
-                <h4 class="panel-title">Send flowers</h4>
+                <h4 class="panel-title">Regretful Flowers</h4>
               </div>
                   <div class="panel-body">
                     <ul>
-                      <li>$35 includes shipping</li>
-                      <li>Flowers sent from a local store.</li>
+                      <li>$50 includes shipping</li>
                     </ul>
-                        <p><img src="
-                          http://s3.amazonaws.com/Supermarket/pictures/530746/il_fullxfull.383823531_ncvf.jpg" alt="cheap flowers" class="img-thumbnail"></p>
+                        <p><img src="http://s7d2.scene7.com/is/image/Teleflora/T403-3A?&wid=175&fmt=jpeg&qlt=90,0&op_sharpen=0&resMode=bilin&op_usm=1.0,0.5,1.0,0&iccEmbed=0&layer=1&opac=0&layer=2&opac=55&layer=5&opac=0" alt="flowers" class="img-thumbnail"></p>
 
                         <%= link_to "SELECT", '#', id: 'select', class: 'btn btn-success', role: "button" %>
                   </div>
@@ -31,14 +29,13 @@
           <div class="col-lg-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h4 class="panel-title">Sorry Jewelry</h4>
+                <h4 class="panel-title">Guilt Ridden Meal Delivery</h4>
               </div>
                   <div class="panel-body">
                     <ul>
-                      <li>$50</li>
-                      <li>...</li>
+                      <li>$50 for GoldBely</li>
                     </ul>
-                        <p><img src="http://myfsn-ars.flowershopnetwork.com/images/flowerdatabase/RO00807lg.167.jpg" alt="medium flowers" class="img-thumbnail"></p>
+                        <p><img src="https://dbpdb4w5l87ir.cloudfront.net/uploads/product/main_image/2728/featured_bobbys-beef-ribs.5c8fe321ba6deba95fc7f4d6fe356cb9.jpg" alt="medium flowers" class="img-thumbnail"></p>
 
                         <%= link_to "SELECT", '#', id: 'select2', class: 'btn btn-success', role: "button" %>
                   </div>
@@ -48,12 +45,11 @@
             <div class="col-lg-4">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Sorry Cookies</h4>
+                  <h4 class="panel-title">Apologetic Cookies</h4>
                 </div>
                     <div class="panel-body">
                       <ul>
                         <li>$40</li>
-                        <li>The best macarons.</li>
                       </ul>
                           <p><img src="http://www.shopsucre.com/media/catalog/product/cache/1/image/310x298/9df78eab33525d08d6e5fb8d27136e95/m/a/mac_nola15_4.jpg" alt="Cookies" class="img-thumbnail"></p>
 
@@ -70,6 +66,7 @@
 
                 <div id="collapseTwo" class="collapse in">
                    <div class="panel-body">
+
                         <p><%= f.label :recipient_first_name, "First Name" %><br />
                       <%= f.text_field :recipient_first_name %></p>
                         <p><%= f.label :recipient_last_name, "Last Name" %><br />
@@ -113,7 +110,8 @@
                         <p><%= f.label :password_confirmation %><br />
                         <%= f.password_field :password_confirmation %></p>
 
-                          <div><%= f.submit "Sign up", class: "btn btn-success", role: "button" %></div>
+                        <div><%= f.submit "Sign up", class: "btn btn-success", role: "button" %> or <%= link_to "Sign In", new_user_session_path %></div>
+
                    </div>
                   </div>
                 </div>
@@ -123,6 +121,4 @@
 <% end %>
 </div>
 </div>
-
-
 

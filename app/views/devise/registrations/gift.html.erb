@@ -2,22 +2,24 @@
 
 <h1>Say Sorry Today...</h1>
 
-<%= form_for (@user) do |f| %>
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+
 <div class="container">
   <div class="accordion">
 
-    <h3 id="accordionHeader1">1. Select Your Sorry Gift</h3>
+    <h3 id="accordionHeader1">1. Small Gift</h3>
     <div class="row-fluid">
       <div class="col-lg-4">
         <div class="panel panel-primary">
           <div class="panel-heading">
-                <h4 class="panel-title">Regretful Flowers</h4>
+                <h4 class="panel-title">Bracelet</h4>
               </div>
                   <div class="panel-body">
                     <ul>
-                      <li>$50 includes shipping</li>
+                      <li>$35 includes shipping</li>
                     </ul>
-                        <p><img src="http://s7d2.scene7.com/is/image/Teleflora/T403-3A?&wid=175&fmt=jpeg&qlt=90,0&op_sharpen=0&resMode=bilin&op_usm=1.0,0.5,1.0,0&iccEmbed=0&layer=1&opac=0&layer=2&opac=55&layer=5&opac=0" alt="flowers" class="img-thumbnail"></p>
+                        <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/16/_8580916.jpg" alt="bracelet" alt="flowers" class="img-thumbnail"></p>
 
                         <%= link_to "SELECT", '#', id: 'select', class: 'btn btn-success', role: "button" %>
                   </div>
@@ -27,13 +29,13 @@
           <div class="col-lg-4">
             <div class="panel panel-primary">
               <div class="panel-heading">
-                <h4 class="panel-title">Guilt Ridden Meal Delivery</h4>
+                <h4 class="panel-title">Personalized Monogram Necklacke</h4>
               </div>
                   <div class="panel-body">
                     <ul>
-                      <li>$50 for GoldBely</li>
+                      <li>$98</li>
                     </ul>
-                        <p><img src="https://dbpdb4w5l87ir.cloudfront.net/uploads/product/main_image/2728/featured_bobbys-beef-ribs.5c8fe321ba6deba95fc7f4d6fe356cb9.jpg" alt="medium flowers" class="img-thumbnail"></p>
+                        <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/6/_8424846.jpg" alt="necklace" class="img-thumbnail"></p>
 
                         <%= link_to "SELECT", '#', id: 'select2', class: 'btn btn-success', role: "button" %>
                   </div>
@@ -43,13 +45,13 @@
             <div class="col-lg-4">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  <h4 class="panel-title">Apologetic Cookies</h4>
+                  <h4 class="panel-title">Michael Kor's Watch</h4>
                 </div>
                     <div class="panel-body">
                       <ul>
-                        <li>$40</li>
+                        <li>$225</li>
                       </ul>
-                          <p><img src="http://www.shopsucre.com/media/catalog/product/cache/1/image/310x298/9df78eab33525d08d6e5fb8d27136e95/m/a/mac_nola15_4.jpg" alt="Cookies" class="img-thumbnail"></p>
+                          <p><img src="http://g.nordstromimage.com/imagegallery/store/product/Large/19/_8055859.jpg"></p>
 
                           <%= link_to "SELECT", '#', id: 'select3', class: 'btn btn-success', role: "button" %>
                     </div>
@@ -95,7 +97,7 @@
 
                 <div id="collapseThree" data-toggle="collapse" class="collapse in">
                    <div class="panel-body">
-                <%= @users_error_messages %>
+                <%= devise_error_messages! %>
                         <p><%= f.label :username %><br />
                         <%= f.text_field :username %></p>
 
@@ -108,7 +110,7 @@
                         <p><%= f.label :password_confirmation %><br />
                         <%= f.password_field :password_confirmation %></p>
 
-                        <div><%= f.submit "Sign up", class: "btn btn-success", role: "button" %> or <%= link_to "Sign In", new_user_session_path %></div>
+                          <div><%= f.submit "Sign up", class: "btn btn-success", role: "button" %> or <%= link_to "Sign In", new_user_session_path %></div>
 
                    </div>
                   </div>
@@ -119,4 +121,7 @@
 <% end %>
 </div>
 </div>
+
+
+
 

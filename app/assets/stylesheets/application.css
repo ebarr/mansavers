@@ -18,7 +18,8 @@
 .section-tout {position: relative;
               top: 61px;}
 .heading {position: relative;
-              top: 61px;}
+              top: 61px;
+              left: 15px;}
 .img-thumbnail {height: 140px;
             width: 140px;
             }

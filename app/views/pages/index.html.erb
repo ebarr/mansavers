@@ -1,31 +1,34 @@
  <div class="jumbotron">
       <div class="container">
         <h1>A Relationship Management Tool</h1>
-        <p>A lifesaver for a few bucks a month... <br />
-        Because we could all use help staying out of trouble.</p>
+        <p>Curated picks to easily say sorry and give gifts... Because we could all use help getting and staying out of trouble.</p>
         <br />
-        <p><%= link_to "Sign Up Today", new_user_registration_path, class: "btn btn-primary btn-lg", role: "button" %>
+        <p><%= link_to "Send a Sorry", new_user_registration_path, class: "btn btn-success btn-lg", role: "button" %> or <%= link_to "Send a Gift", gifts_path, class: "btn btn-success btn-lg", role: "button" %>
          </p>
       </div>
     </div>
-
-
 
     <div class="section-tout">
       <div class="container">
 
         <div class="row">
           <div class="col-lg-4 col-sm-6">
-            <h3><i class="fa fa-magic"></i> Holiday Reminders</h3>
-            <p>Never forget another holiday, milestone or "special day" again. We'll send you email reminders and gift recommendations.</p>
+            <h3><i class="fa fa-magic"></i> Say Sorry</h3>
+            <p>One of the best ways to say sorry is by sending a sorry gift and ManSavers has already done the work for you. All you have to do is simply select one of three choices.</p>
+            <p><%= link_to "Say Sorry", new_user_registration_path, class: "btn btn-primary btn-md", role: "button" %>
+            </p>
           </div>
           <div class="col-lg-4 col-sm-6">
             <h3><i class="fa fa-heart"></i> Less Work for You</h3>
-            <p>You'll never have to visit another flowers website again. Let us know she's pissed and we'll send flowers for you from you.</p>
+            <p>You'll never have to visit another fashion website again. Let us know when you need a gift and we'll send gifts for you from you.</p>
+            <p><%= link_to "Send a Gift", gifts_path, class: "btn btn-primary btn-md", role: "button" %>
+            </p>
           </div>
           <div class="col-lg-4 col-sm-6">
             <h3><i class="fa fa-beer"></i> She'll Never Know</h3>
             <p>Anything sent to her will look like it's coming straight from a store or florist. She'll never know how clever you really are.</p>
+             <p><%= link_to "Get Started", new_user_registration_path, class: "btn btn-primary btn-md", role: "button" %>
+            </p>
           </div>
 
         </div>

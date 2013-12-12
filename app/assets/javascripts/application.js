@@ -23,7 +23,6 @@ $(function() {
    $("#select, #select2, #select3").on("click", function() {
     $("#accordionTwo").click();
 
-
   $("#continue").on("click", function() {
     $("#accordionThree").click();
 

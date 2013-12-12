@@ -16,11 +16,12 @@ Mansavers::Application.routes.draw do
   delete '/gifts/:id', controller: 'gifts', action: 'destroy'
   #------------------------------
 
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "users"}
 
   root 'pages#index'
    get '/options', controller: 'pages', action: 'options'
    get '/thanks', controller: 'pages', action: 'thanks'
+
   resources :users
 
   # Routes for the Recipient resource:

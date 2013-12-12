@@ -3,6 +3,12 @@ class GiftsController < ApplicationController
   def index
     @gifts = Gift.all
     @gift = Gift.new
+    @gift.recipient_first_name = params[:recipient_first_name]
+    @gift.recipient_last_name = params[:recipient_last_name]
+    @gift.address = params[:address]
+    @gift.city = params[:city]
+    @gift.state = params[:state]
+    @gift.zip_code = params[:zip_code]
 
     if @gift.save
       render
